@@ -14,6 +14,7 @@ export default class WitcherActor<T = {}> extends Actor<T> {
     else if (this.data.type === "npc") this._prepareNPCData(this.data);
   }
 
+  // @ts-ignore
   private _prepareCharacterData(actorData: ActorData<any>) {
     const data = actorData.data;
 
@@ -36,6 +37,7 @@ export default class WitcherActor<T = {}> extends Actor<T> {
     );
   }
 
+  // @ts-ignore
   private _prepareNPCData(actorData: ActorData<any>) {
     const data = actorData.data;
 
@@ -45,6 +47,7 @@ export default class WitcherActor<T = {}> extends Actor<T> {
   }
 
   private _prepareDerivedAbilities(
+    // @ts-ignore
     actorData: ActorData<any>,
     npc: Boolean = false
   ) {
@@ -92,6 +95,7 @@ export default class WitcherActor<T = {}> extends Actor<T> {
     }
   }
 
+  // @ts-ignore
   private _prepareSkills(actorData: ActorData<any>) {
     const data = actorData.data;
     const flags = actorData.flags.thewitcher || {};

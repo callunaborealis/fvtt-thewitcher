@@ -52,6 +52,7 @@ export default class WitcherActorSheet extends ActorSheet<{}, WitcherActor> {
   /**
    * @override
    */
+  // @ts-ignore
   getData(): ActorSheetData<any> {
     ``;
     let data = mergeObject(super.getData(), {
